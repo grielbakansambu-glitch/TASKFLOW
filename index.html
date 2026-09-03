@@ -3,22 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/style.css">
-        <title>TaskFlow_d'_Oracles</title>
+        <title>TaskFlow</title>
     </head>
     <body>
         <header>
             <nav>
-                <img src="assets/images/logo.png">
+                <img src="assets/images/logo.png" alt="Logo de TaskFlow" class="logo" width="50" height="50">
+                <h2>TaskFlow</h2>
             </nav>
-
+            
         </header>
 
         <main>
+            <fieldset>
+                <legend>Créer une nouvelle tâche</legend>
+                <form>
+                    <label for="task-name">Nom de la tâche :</label>
+                    <input type="text" id="task-name" name="task-name" required>
+                    <br><br>
 
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+                    <br><br>
+
+                    <h3>Horaire</h3>
+                    <label for="time-debut">Heure de début :</label>
+                    <input type="time" id="time-debut" name="time-debut" required>
+                    <br><br>
+
+                    <label for="time-fin">Heure de fin :</label>
+                    <input type="time" id="time-fin" name="time-fin" required>
+                    <br><br>
+
+                    <label for="task-objectif">Objectif :</label>
+                    <textarea id="task-objectif" name="task-objectif"></textarea>
+                    <br><br>
+                    <button type="submit">Ajouter la tâche</button>
+                    
+                </form>
+                <section>
+                    <h3>MES TÂCHES</h3>
+                    <div id="task-list">
+                        <!-- Les tâches seront ajoutées ici par JavaScript -->
+                    </div>
+                </section>
+            </fieldset>
         </main>
 
         <footer>
-
+            <h6>© 2026 TaskFlow. Lab01 Web.</h6>
         </footer>
     </body>
 </html>
