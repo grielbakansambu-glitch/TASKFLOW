@@ -1,0 +1,153 @@
+/* ================= CONFIGURATION GLOBALE ================= */
+
+/* Style appliqué à toute la page (le corps du site) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choix d'une police moderne et lisible */
+    background-color: #fcfbf9; /* Couleur de fond de la page : un blanc cassé très doux */
+    color: #111111; /* Couleur principale du texte : un noir presque pur */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    padding: 20px; /* Ajoute un espace autour de la page */
+}
+
+
+/* ================= EN-TÊTE ET NAVIGATION ================= */
+
+/* Conteneur de l'en-tête pour limiter sa largeur et le centrer */
+header {
+    max-width: 420px; /* Limite la largeur pour garder un format compact */
+    margin: 0 auto 15px auto; /* Centre l'élément et ajoute un espace en bas */
+}
+
+/* Barre de navigation qui contient le logo et le titre */
+nav {
+    display: flex; /* Aligne les éléments côte à côte (logo + titre) */
+    align-items: center; /* Centre verticalement les éléments dans la barre */
+    background-color: #0047ab; /* Fond de la navigation : un bleu franc et professionnel */
+    padding: 12px 20px; /* Espace interne pour que ça respire */
+    border-radius: 12px; /* Arrondit les coins de la barre de navigation */
+}
+
+/* Style de l'image du logo */
+.logo {
+    border-radius: 50%; /* Rend le logo parfaitement rond */
+    margin-right: 15px; /* Ajoute un espace à droite entre le logo et le texte */
+}
+
+/* Titre "TaskFlow" dans la navigation */
+nav h2 {
+    color: #ffffff; /* Texte en blanc pour bien ressortir sur le fond bleu */
+    margin: 0; /* Supprime les marges par défaut du titre */
+    font-size: 1.4rem; /* Définit la taille du texte */
+}
+
+
+/* ================= CONTENEUR PRINCIPAL ( FIELDSET ) ================= */
+
+/* Le bloc qui encadre tout le formulaire et la liste */
+fieldset {
+    background-color: #ffffff; /* Fond blanc pur pour le formulaire */
+    border: 2px solid #0047ab; /* Une bordure solide de couleur bleue */
+    border-radius: 16px; /* Coins arrondis pour un design moderne */
+    padding: 30px; /* Espace interne autour des champs */
+    max-width: 420px; /* Largeur maximale pour garder un format style mobile */
+    margin: 0 auto; /* Centre le formulaire au milieu de la page */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Ajoute une ombre légère et propre en dessous */
+}
+
+/* Le titre de la boîte du formulaire (légende) */
+fieldset legend {
+    font-size: 1.1rem; /* Taille du texte un peu plus grande */
+    font-weight: bold; /* Texte en gras */
+    padding: 4px 12px; /* Espace interne autour du texte de la légende */
+    background-color: #fcfbf9; /* Fond blanc cassé pour la légende */
+    color: #0047ab; /* Texte en bleu */
+    border: 1px solid #0047ab; /* Bordure bleue autour du titre */
+    border-radius: 6px; /* Coins légèrement arrondis */
+}
+
+
+/* ================= TEXTES ET ÉTIQUETTES (LABELS) ================= */
+
+/* Cible tous les titres (h3) et les étiquettes de texte à l'intérieur du formulaire */
+fieldset h3, 
+fieldset label {
+    color: #111111; /* Texte en noir pour une lisibilité parfaite */
+    font-weight: bold; /* Met le texte en gras */
+    display: block; /* Force l'élément à prendre toute la ligne */
+    margin-top: 10px; /* Petit espace au-dessus */
+}
+
+
+/* ================= CHAMPS DE SAISIE (INPUTS & TEXTAREA) ================= */
+
+/* Cible les champs de texte, de date, d'heure et la zone de texte */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%; /* Le champ prend toute la largeur disponible de la boîte */
+    padding: 12px; /* Espace interne pour écrire confortablement */
+    margin-top: 6px; /* Petit espace au-dessus du champ */
+    margin-bottom: 10px; /* Espace en dessous pour séparer des autres éléments */
+    border: 1px solid #718096; /* Bordure grise/noire discrète */
+    border-radius: 8px; /* Coins arrondis du champ */
+    box-sizing: border-box; /* S'assure que le padding ne dépasse pas de la largeur */
+    font-size: 14px; /* Taille du texte qu'on tape */
+    background-color: #fcfbf9; /* Fond blanc cassé à l'intérieur du champ */
+    color: #111111; /* Couleur du texte qu'on tape : en noir */
+}
+
+/* Effet magique lorsqu'on clique à l'intérieur d'un champ pour écrire */
+input:focus, textarea:focus {
+    outline: none; /* Supprime l'effet de bordure moche par défaut du navigateur */
+    border-color: #0047ab; /* La bordure devient bleue */
+    background-color: #ffffff; /* Le fond devient blanc pur */
+    box-shadow: 0 0 5px rgba(0, 71, 171, 0.3); /* Ajoute une lueur bleue autour du champ */
+}
+
+
+/* ================= LES BOUTONS ================= */
+
+/* Style de base pour les boutons du formulaire */
+button[type="submit"] {
+    background-color: #0047ab; /* Fond bleu */
+    color: #ffffff; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 12px; /* Espace interne pour grossir le bouton */
+    border-radius: 8px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur en petite main au survol */
+    width: 100%; /* Le bouton prend toute la largeur */
+    font-weight: bold; /* Texte en gras */
+    font-size: 15px; /* Taille du texte du bouton */
+    margin-top: 5px; /* Espace au-dessus du bouton */
+    transition: background-color 0.2s ease; /* Rend le changement de couleur fluide au survol */
+}
+
+/* Effet quand la souris passe sur le bouton */
+button[type="submit"]:hover {
+    background-color: #002d62; /* Le bleu devient un peu plus foncé */
+}
+
+
+/* ================= ZONE DE LA LISTE DES TÂCHES ================= */
+
+/* Conteneur où JavaScript viendra insérer les tâches créées */
+#task-list {
+    margin-top: 15px; /* Espace au-dessus */
+    background-color: #fcfbf9; /* Fond blanc cassé */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px; /* Espace interne */
+    min-height: 40px; /* Hauteur minimale pour qu'on voie la zone même vide */
+    border-left: 4px solid #0047ab; /* Une jolie ligne de repère bleue sur le côté gauche */
+}
+
+
+/* ================= PIED DE PAGE (FOOTER) ================= */
+
+/* Style pour le texte tout en bas du site */
+footer {
+    text-align: center; /* Centre le texte au milieu */
+    margin-top: 20px; /* Espace au-dessus du footer */
+    color: #555555; /* Couleur gris foncé / noir atténué */
+    font-size: 12px; /* Texte plus petit */
+}
